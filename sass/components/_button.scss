@@ -1,0 +1,74 @@
+.button.title-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    line-height: calc(30/16);
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.title-button:focus,
+.button.title-button:hover {
+    background-color: $accent-color;
+}
+
+
+/* Наші послуги у портфоліо*/
+
+.button.projects-button {
+    padding: 6px 22px;
+    border: 0;
+    cursor: pointer;
+    background-color: $primary-white-color;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: calc(26/16);
+    border-radius: 4px;
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button.projects-button:hover,
+.button.projects-button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.buttons .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button.projects-button:focus,
+.button.projects-button:hover {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    /*filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+}
+
+.button {
+    color: $title-text-color;
+    background-color: $secondary-white-color;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+

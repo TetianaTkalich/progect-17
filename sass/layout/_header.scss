@@ -1,0 +1,250 @@
+.page-header {
+    
+    border-bottom: 1px solid #ececec;
+   
+
+    @media screen and (min-width: $tablet) {
+            height: 80px;
+            display: flex;
+        }
+       
+    }
+
+    .page-header .container {
+        display: flex;
+        align-items: center;
+          
+        @media screen and (min-width: $tablet) {
+         height: 80px;
+         
+    }
+    
+    }
+
+    .page-header .container .logo{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        @media screen and (max-width: 767px) {
+              margin-right: auto;
+            }
+    }
+
+.navigation {
+    display: flex;
+    align-items: center;
+    
+    @media screen and (max-width: 767px) {
+    display: none;
+    
+        }
+    
+}
+
+.menu{
+  
+    @media screen and (min-width: 768px) {
+    display: flex;
+    .menu__item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}
+
+
+.contacts {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) {
+    display:flex;
+    margin-left: auto;
+    }
+    @media screen and (mix-width: 1200px) {
+            display: flex;
+            margin-left: auto;
+        }
+              
+}
+
+.web {
+    color: #2196F3;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo {
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;        
+        margin-right: 92px;
+    }
+}
+
+
+.menu__link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        position: relative;
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.header-tel .phone {
+    fill: currentColor;
+}
+
+.active {
+    color: $accent-color
+}
+
+
+.header-tel,
+.header-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: block;
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px
+        }
+    
+    
+        color: $secondary-white-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.02em;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+    
+        }
+}
+
+.header-tel{
+    @media screen and (min-width: $tablet) {
+          margin-right: 0;  
+          margin-bottom: 10px;
+        }
+}
+
+
+
+    // .menu__item:not(:first-child) {
+    // margin-left: 50px;
+    // align-items: center;
+    // }
+    .menu__link.current::after {
+    opacity: 1;
+    }
+
+
+// .menu__item:not(:last-child){
+//     @media screen and (min-width: $tablet) {
+//     margin-right: 50px;
+//         }
+// }
+
+.contacts {
+    display: none;
+    @media screen and (min-width: $desktop) {
+     display: flex;
+    margin-left: auto;
+    
+    .contacts__item+.contacts__item {
+                margin-left: 50px;
+            }
+        }
+    
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: auto;
+    }
+    
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    }
+     
+}
+.contacts__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+    margin-bottom: 10px;
+    }
+    
+    &:first-child {
+    margin-top: 21px;
+    }
+}
+}
+
+.header-mail,
+.header-tel{
+display: block;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    color: $secondary-white-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+ 
+    
+    
+
+
+
+
+
+.phone {
+    fill: currentColor;
+    margin-right: 8px;
+    vertical-align: middle;
+    @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+        }
+}
+
